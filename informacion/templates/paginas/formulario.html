@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="container" >
+
+    
+    
+    
+    <br><br><br>
+
+      <div class="container" align="center">
+        <h1> INFORMACION </h1>
+          <div class="row">
+            <div class="col"></div>
+
+            <div class="col">
+                <form class="form-control" action="/calcular" method="POST">
+                    {% csrf_token %}
+                
+                    <div  class="mb-3">
+                        <label for="" class="form-label"></label>
+                        <input  type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre">
+                        <small id="helpId" class="form-text text-muted">Ingresa el Nombre</small>
+                      </div>
+        
+                    <div class="mb-3">
+                      <label for="" class="form-label"></label>
+                      <input type="text" class="form-control" name="año" id="año" aria-describedby="helpId" placeholder="año">
+                      <small id="helpId" class="form-text text-muted">Año de nacimiento</small>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="" class="form-label"></label>
+                        <input type="text" class="form-control" name="mes" id="mes" aria-describedby="helpId" placeholder="mes">
+                        <small id="helpId" class="form-text text-muted">Mes de nacimiento</small>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="" class="form-label"></label>
+                        <input type="text" class="form-control" name="dia" id="dia" aria-describedby="helpId" placeholder="dia">
+                        <small id="helpId" class="form-text text-muted">Día de nacimiento</small>
+                    </div>
+                    <!--
+                    <div class="mb-3">
+                        <label for="" class="form-label"></label>
+                        <input type="text" class="form-control" name="hora" id="hora" aria-describedby="helpId" placeholder="hora">
+                        <small id="helpId" class="form-text text-muted">Hora</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="" class="form-label"></label>
+                        <input type="text" class="form-control" name="minuto" id="minuto" aria-describedby="helpId" placeholder="minuto">
+                        <small id="helpId" class="form-text text-muted">Minuto</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="" class="form-label"></label>
+                        <input type="text" class="form-control" name="segundo" id="segundo" aria-describedby="helpId" placeholder="segundo">
+                        <small id="helpId" class="form-text text-muted">Segundo</small>
+                    </div>
+                    -->
+                    <button type="submit" class="btn btn-primary">Calcular edad</button>
+                
+                </form>
+
+            </div>
+            <div class="col"></div>
+
+
+          </div>
+      </div>
+
+</body>
+</html>
